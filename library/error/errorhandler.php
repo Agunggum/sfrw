@@ -1,0 +1,1 @@
+<?php echo '<br><bdo><sub><small><pre><strong>Kesalahan:</strong><br> ['.$ee[0].'] [<strong>baris ke :</strong> '.$ee[1].'] '.$ee[2].' [<strong>di file</strong> '.$ee[3].']</pre></small></sub></bdo>'; ?>

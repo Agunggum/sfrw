@@ -1,0 +1,16 @@
+﻿ErrorDocument 403 "<!DOCTYPE html><html dir='ltr' lang='id'><head><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=''><meta name='author' content=''><title>403 Forbidden</title><style>@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800');@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800');@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800');body{margin:0;font-family:'Nunito Sans', sans-serif;font-size:0.875rem;font-weight:400;line-height:1.5;color:#3e5569;text-align:left;background-color:#eeeeee}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:0.5rem}p{margin-top:0;margin-bottom:1rem}</style></head><body><div><div style='height:100%; position:fixed; background:#fff; width:100%;'><div style='padding-top:5%; text-align:center!important'><h1 style='font-size:210px; font-weight:900; text-shadow:4px 4px 0 #fff, 6px 6px 0 #343a40; line-height:210px; color:#da542e!important;'>403</h1><h3 style='text-transform:uppercase!important;'>FORBIDDEN !</h3><p style='color:#a1aab2!important; margin-top:30px; margin-bottom:30px;'>YOU SEEM TO BE TRYING TO FIND HIS WAY HOME</p></div></div></div></body></html>"
+
+<FilesMatch "\.?htaccess$">
+ order allow,deny
+ deny from all
+</FilesMatch>
+
+<FilesMatch "\.?txt$">
+ order allow,deny
+ deny from all
+</FilesMatch>
+
+RewriteEngine on
+
+# Disable directory browsing
+Options -Indexes

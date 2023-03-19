@@ -5,11 +5,11 @@ class Users {
 
     //schema table users
     public $fill = [
-        'nik', 
-        'nama_lengkap',
+        'user', 
+        'name',
     ];
     
-    static public function schematable($table = "master_users") {
+    static public function schematable($table = "users") {
         return $table; 
     }
     
